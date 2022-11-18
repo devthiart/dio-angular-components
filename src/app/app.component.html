@@ -1,0 +1,16 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<h1>OLÁ MUNDÃO BRABO!</h1>
+<menu-component></menu-component>
+
+<!-- Data Binding = Associação de Dados -->
+<!-- Interpolation -->
+<my-button label="{{ buttonLabelByApp }}"></my-button>
+<my-button [label]="buttonSecondLabelByApp"></my-button>
+
+<!-- Property Binding -->
+<my-button label="generic name"></my-button>
+<my-button [label]="'generic name'"></my-button>
+
+<!-- Two Way Data Binding -->
+<app-entry-data></app-entry-data>

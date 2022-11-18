@@ -1,0 +1,11 @@
+<input
+  type="text"
+  [value]="placeholder"
+  (input)="placeholder = $any($event.target).value"
+/>
+<p>Input placeholder Value: "{{ placeholder }}"</p>
+
+<!-- [(ngModel)] replace [value] and (input)
+  Doc: https://angular.io/guide/built-in-directives#ngModel -->
+<input type="text" [(ngModel)]="placepass" />
+<p [style.color]="color">Input placepass Value: "{{ placepass }}"</p>
